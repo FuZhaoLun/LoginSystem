@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+    <link rel="stylesheet" type="text/css" href="../css/myLogin.css">
+    <script type="text/javascript" src="../js/login.js"></script>
+    <script type="text/javascript" src="../js/register.js"></script>
+</head>
+
+<body style="overflow:hidden">
+    <div id="div1">
+        <form id="loginForm" method="get" action="http://localhost:9999/Test/Login">
+            <table id="loginTable" aria-rowcount="3" aria-colcount="2">
+                <tr>
+                    <td>
+                        <label for="userName">账 号：</label>
+                    </td>
+                    <td>
+                        <input type="text" id="userName" name="userName" maxlength="9" placeholder="请输入账号"
+                               placeholder-class="inputStyle" onblur="check()"/><span id="tip"></span><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">密 码：</label>
+                    </td>
+                    <td>
+                        <input type="password" id="password" name="password" maxlength="12"/><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <input type="submit" id="button1" value="登录"/>
+                    </td>
+                    <td align="center">
+                        <input type="button" id="button2" value="注册" onclick="register()"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

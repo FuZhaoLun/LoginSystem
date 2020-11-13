@@ -1,0 +1,115 @@
+body{
+    /*兼容浏览器版本*/
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    margin:0px;
+    padding:0px;
+    font-family:sans-serif;
+    background: url(../picture/bodyBackground.jpg);
+    filter:progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=60)
+    /*background-size:cover;*/
+}
+
+.box{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    /*实现块元素百分比下居中*/
+    width:450px;
+    padding:55px;
+    background: rgb(227,225,225,80%);/*背景颜色*/
+    box-sizing:border-box;
+    box-shadow: 0px 15px 25px rgba(0,0,0,.5);/*阴影*/
+    border-radius:20px;/*边角圆润程度*/
+}
+
+.box h2{
+    margin:0 0 40px;
+    padding:0;
+    color: #1094e1;
+    text-align:center;
+}
+
+#tips{
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color: #e11d1d;
+}
+
+.box .inputbox{
+    position:relative;
+}
+
+.box .inputbox input{
+    width: 100%;
+    padding:10px 0px;/*第二个参数为下划线超出长度*/
+    font-size:16px;
+    font-weight: bold;
+    color: #03a9f4;
+    letter-spacing: 1px;
+    margin-bottom: 55px;
+    border:none;/*无边框*/
+    border-bottom: 1px solid #fff;/*自定义下划线*/
+    outline:none;/*无轮廓*/
+    background: transparent;/*设置背景透明*/
+}
+
+/*解决浏览器记住密码后会覆盖输入框原有样式的问题*/
+.box .inputbox input:-webkit-autofill , textarea:-webkit-autofill, select:-webkit-autofill {
+    -webkit-text-fill-color: #03a9f4 !important;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    transition: background-color 50000s ease-in-out 0s;
+}
+
+.box .inputbox label{
+    position:absolute;/*位置使用绝对布局*/
+    top:0px;
+    left:0px;
+    padding:10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #03a9f4;
+    pointer-events:none;
+    transition:.5s;
+}
+
+.box .inputbox input:valid ~ label,
+.box .inputbox input:focus ~ label{
+    top:-25px;
+    left:0px;
+    color: #fff;
+    font-size:15px;
+}
+
+.box input[type="submit"]{
+    border:none;
+    outline:none;
+    font-size: 16px;
+    font-weight: bold;
+    color:#fff;
+    background: #03a9f4;
+    padding:15px 20px;
+    cursor: pointer;
+    border-radius:10px;
+    position:absolute;
+    top:80%;
+    left:20%;
+}
+
+.box input[type="button"]{
+    border:none;
+    outline:none;
+    font-size: 16px;
+    font-weight: bold;
+    color:#fff;
+    background: #03a9f4;
+    padding:15px 20px;
+    cursor: pointer;
+    border-radius:10px;
+    position:absolute;
+    top:80%;
+    left:55%;
+}

@@ -1,0 +1,60 @@
+body {
+    background-attachment:fixed;
+    background: url(../picture/bodyBackground.jpg) no-repeat center center fixed;
+    /*¼æÈÝä¯ÀÀÆ÷°æ±¾*/
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#div1 {
+    margin:0px auto;
+}
+
+#loginForm {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: serif;
+    position: absolute;
+    top: 200px;
+    left: 550px;
+    height: 300px;
+    width: 400px;
+    border: 2px solid red;
+    background-image: url(../picture/formBackground.jpg);
+    background-size: cover;
+}
+
+#loginTable {
+    border-spacing: 0px 15px;
+    position: absolute;
+    color: white;
+    top: 90px;
+    left: 70px;
+}
+
+#button1{
+    /*border-style:solid;
+    border-color:#ff0000;*/
+    border: none;
+    background-color: #4395ff;
+    color: white;
+    font-weight: bold;
+}
+
+#button2{
+    /*border-style:solid;
+    border-color:#ff0000;*/
+    border: none;
+    background-color: #4395ff;
+    color: white;
+    font-weight: bold;
+}
+
+.inputStyle{
+    color: #f8f2f2;
+}
+
+#tip{
+    font-size: 12px;
+}

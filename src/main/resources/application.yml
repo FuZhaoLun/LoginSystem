@@ -1,0 +1,18 @@
+server:
+  port: 9999
+  servlet:
+    context-path: /Test
+  tomcat:
+    uri-encoding: UTF-8
+
+logging:
+  level:
+    com.wistron.picturerecognition.dao: debug
+
+spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://10.42.21.112;DatabaseName=EWKS
+    username: wkseform
+    password: WKSp0rtal11
+    type: com.alibaba.druid.pool.DruidDataSource

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>注册界面</title>
+        <link rel="stylesheet" type="text/css" href="../css/register.css">
+        <script type="text/javascript" src="../js/register.js"></script>
+    </head>
+    <body>
+        <div class="box">
+            <h2>Register</h2>
+            <span id="userNameTip"></span>
+            <span id="passwordTip"></span>
+            <form method="get" action="http://localhost:9999/Test/Register">
+                <div class="inputbox">
+                    <input type="text" id="userName" name="userName" required="" onblur="checkUserName()">
+                    <label>用户名</label>
+                </div>
+                <div class="inputbox">
+                    <input type="password" id="password1" name="password1" required="">
+                    <label>设置密码</label>
+                </div>
+                <div class="inputbox">
+                    <input type="password" id="password2" name="password2" required="" onblur="checkPassword()">
+                    <label>确认密码</label>
+                </div>
+                <div class="inputbox">
+                    <select id="site" name="site" required="">
+                        <option value="1">WMX</option>
+                        <option value="2">WOK</option>
+                        <option value="3">WMY</option>
+                        <option value="4" selected="selected">WKS</option>
+                        <option value="5">WMI</option>
+                        <option value="6">WCD</option>
+                        <option value="7">WCQ</option>
+                        <option value="8">WZS</option>
+                    </select>
+                </div>
+                <div class="inputbox">
+                    <input type="text" name="IDNO" required="" maxlength="18">
+                    <label>身份证号</label>
+                </div>
+                <input type="submit" value="点击注册">
+            </form>
+        </div>
+    </body>
+</html>
